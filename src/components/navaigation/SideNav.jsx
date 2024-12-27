@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const SideNav = () => {
   return (
-    <aside className="w-[25%] px-12">
+    <aside className="sticky top-0 left-0">
       <button className="btn w-full">
         <FaArrowLeft />
         All restaurants
