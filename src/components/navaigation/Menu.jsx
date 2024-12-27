@@ -35,7 +35,7 @@ const Menu = () => {
         <li>
           <a
             href="#home"
-            className={`${activeLink === "#home" ? "btn w-full" : ""}`}
+            className={`${activeLink === "#home" ? "font-semibold bg-gray-200 p-2 w-full block rounded-xl" : "ml-2"}`}
           >
             Home
           </a>
@@ -43,7 +43,7 @@ const Menu = () => {
         <li>
           <a
             href="#about"
-            className={`${activeLink === "#about" ? "btn w-full" : ""}`}
+            className={`${activeLink === "#about" ? "font-semibold bg-gray-200 p-2 w-full block rounded-xl" : "ml-2"}`}
           >
             About
           </a>
@@ -51,7 +51,7 @@ const Menu = () => {
         <li>
           <a
             href="#service"
-            className={`${activeLink === "#service" ? "btn w-full" : ""}`}
+            className={`${activeLink === "#service" ? "font-semibold bg-gray-200 p-2 w-full block rounded-xl" : "ml-2"}`}
           >
             Service
           </a>
@@ -59,7 +59,7 @@ const Menu = () => {
         <li>
           <a
             href="#contact"
-            className={`${activeLink === "#contact" ? "btn w-full" : ""}`}
+            className={`${activeLink === "#contact" ? "font-semibold bg-gray-200 p-2 w-full block rounded-xl" : "ml-2"}`}
           >
             Contact
           </a>
