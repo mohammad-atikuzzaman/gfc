@@ -2,7 +2,7 @@ import React from "react";
 
 const Section = ({ id }) => {
   return (
-    <div id={id}>
+    <div id={`${id}`}>
       <h2 className="text-xl font-semibold">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
         consectetur?

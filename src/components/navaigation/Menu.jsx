@@ -4,10 +4,8 @@ import React, { useEffect, useState } from "react";
 const Menu = () => {
   const [activeLink, setActiveLink] = useState("#home");
 
-  console.log(activeLink);
-
   const handleScroll = () => {
-    const sections = ["#home", "#about","#service", "#contact"];
+    const sections = ["#home", "#about", "#service", "#contact"];
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((section) => {
@@ -35,16 +33,36 @@ const Menu = () => {
       <h2 className="text-2xl font-semibold mb-4">Menu</h2>
       <ul className="text-xl">
         <li>
-          <a href="/" className={`${activeLink==="#home"? "font-semibold underline":""}`}>Home</a>
+          <a
+            href="#home"
+            className={`${activeLink === "#home" ? "btn w-full" : ""}`}
+          >
+            Home
+          </a>
         </li>
         <li>
-          <a href="#about" className={`${activeLink==="#about"? "font-semibold underline":""}`}>About</a>
+          <a
+            href="#about"
+            className={`${activeLink === "#about" ? "btn w-full" : ""}`}
+          >
+            About
+          </a>
         </li>
         <li>
-          <a href="#service" className={`${activeLink==="#service"? "font-semibold underline":""}`}>Service</a>
+          <a
+            href="#service"
+            className={`${activeLink === "#service" ? "btn w-full" : ""}`}
+          >
+            Service
+          </a>
         </li>
         <li>
-          <a href="#contact" className={`${activeLink==="#contact"? "font-semibold underline":""}`}>Contact</a>
+          <a
+            href="#contact"
+            className={`${activeLink === "#contact" ? "btn w-full" : ""}`}
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </menu>
